@@ -1,0 +1,58 @@
+{
+  "version": 1,
+  "author": "JIBSIL",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-nano", "id": "nano", "top": 52.8, "left": 28.3, "attrs": {} },
+    {
+      "type": "wokwi-hc-sr04",
+      "id": "ultrasonic1",
+      "top": -200.1,
+      "left": -138.5,
+      "attrs": { "distance": "400" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 198.2,
+      "left": 115.2,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 195.95,
+      "left": 19.2,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -109.2,
+      "left": 90.2,
+      "attrs": { "color": "red", "flip": "" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -14.4,
+      "left": 95.45,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "ultrasonic1:VCC", "nano:5V", "red", [ "v0" ] ],
+    [ "ultrasonic1:GND", "nano:GND.1", "black", [ "v0" ] ],
+    [ "ultrasonic1:TRIG", "nano:12", "green", [ "v0" ] ],
+    [ "ultrasonic1:ECHO", "nano:11", "green", [ "v0" ] ],
+    [ "btn1:2.r", "nano:GND.1", "black", [ "h0" ] ],
+    [ "r1:1", "nano:5V", "green", [ "v0" ] ],
+    [ "r1:2", "nano:10", "green", [ "v0" ] ],
+    [ "btn1:1.l", "nano:10", "green", [ "h-38.4", "v-86.4" ] ],
+    [ "led1:C", "nano:GND.1", "green", [ "v0" ] ],
+    [ "r2:1", "led1:A", "green", [ "h0" ] ],
+    [ "r2:2", "nano:9", "green", [ "h0" ] ]
+  ],
+  "dependencies": {}
+}
