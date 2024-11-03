@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 2.7,
-          "height": 4.0,
-          "width": 4.0
+          "drill": 0.0,
+          "height": 2.2,
+          "width": 1.05
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -474,14 +474,19 @@
       "GND": "rgb(28, 255, 48)"
     },
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Default",
+        "pattern": "ACCEL1-K"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
       "gencad": "emerald_pcb.cad",
       "idf": "emerald_pcb.emn",
       "netlist": "",
-      "plot": "C:/Users/TheEb/Downloads/openav_gerbers/",
+      "plot": "../../Downloads/openav/",
       "pos_files": "",
       "specctra_dsn": "../../Downloads/emerald_pcb.dsn",
       "step": "",
