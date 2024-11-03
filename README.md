@@ -1,5 +1,9 @@
 ## OpenAV
 
+### Important Note
+
+OpenAV is still in beta! Please review the schematic, BOM and PCB to adjust the OpenAV kit to your requirements. It is untested so far, so it may have major bugs and other issues.
+
 ### Information
 The OpenAV PCB was created to be a universal system for rocketry - with a LoRa long distance radio, a SIM800C for geolocation and Internet communication, an ESP32 for WiFi support and an MPU6050 for sensor data, it provides everything you could want in an avionics system. It integrates seamlessly with the OpenAV library to eliminate coding complexity; with a multitude of ready-to-go configurations, it provides support for any kind of rocket.
 
